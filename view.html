@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management System</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #444;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .table-button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .table-button {
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 300px;
+            text-align: center;
+        }
+
+        .table-button:hover {
+            background-color: #555;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+            margin-left: 90%;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Banking Management System</h1>
+    <h2><a href="logout.php">Logout</a></h2>
+</header>
+
+<!-- <nav>
+    <a href="index.html">Home</a>
+    <a href="view_records.php?table=vehicle_loans">View Vehicle Loans</a>
+    <a href="view_records.php?table=savings_accounts">View Savings Accounts</a>
+    <a href="view_records.php?table=travel_insurance">View Travel Insurance</a>
+</nav> -->
+
+<div class="main-content">
+    <h2>Select a Table to View Data</h2>
+
+    <div class="table-button-container">
+        <button class="table-button" onclick="window.location.href='individual_acc_view.php'">Individual Accounts</button>
+        <button class="table-button" onclick="window.location.href='saving_acc_view.php'">Savings Accounts</button>
+        <button class="table-button" onclick="window.location.href='fixed_deposit_view.php'">Fixed Deposit Accounts</button>
+        <button class="table-button" onclick="window.location.href='business_acc_view.php'">Bussiness Accounts</button>
+        <button class="table-button" onclick="window.location.href='personal_loan_view.php'">Personal Loan</button>
+        <button class="table-button" onclick="window.location.href='home_loan_view.php'">Home Loan</button>
+        <button class="table-button" onclick="window.location.href='vehicel_loan_view.php'">Vehical Loan</button>
+        <button class="table-button" onclick="window.location.href='gold_loan_view.php'">Gold Loan</button>
+        <button class="table-button" onclick="window.location.href='health_In_view.php'">Health Insurance</button>
+        <button class="table-button" onclick="window.location.href='home_In_view.php'">Home Insurance</button>
+        <button class="table-button" onclick="window.location.href='life_In_view.php'">Life Insurance</button>
+        <button class="table-button" onclick="window.location.href='vehicle_In_view.php'">Vehical Insurance</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Banking Management System</p>
+</footer>
+
+</body>
+</html>
