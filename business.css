@@ -1,0 +1,141 @@
+/* style.css */
+body {
+    background-color: #e1e4eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #060736;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type='text'],input[type='date'],input[type='tel'],input[type='email'],input[type='number'],select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+textarea{
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+fieldset {
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #007BFF;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.left{
+    float:left;
+        width: 50%;
+        height:190px;
+}
+    
+.right{
+     float:right;
+     width: 50%;
+     height:170px;
+}
+
+.leftsingle{
+    float:left;
+        width: 50%;
+        height:50px;
+}
+    
+.rightsingle{
+     float:right;
+     width: 50%;
+     height:50px;
+}
+
+
+button{
+
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-left: 40%;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#home {
+    background-image: linear-gradient(to bottom, #060736, #1b1d88);
+    color: #fff;
+    text-align: center;
+}

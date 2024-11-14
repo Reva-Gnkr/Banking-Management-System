@@ -1,0 +1,19 @@
+CREATE TABLE personal_loan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255),
+    date_of_birth DATE,
+    gender VARCHAR(10),
+    address TEXT,
+    contact_number VARCHAR(20),
+    email_address VARCHAR(255),
+    identity_proof VARCHAR(255),
+    bank_statement VARCHAR(255),
+    salary_slip VARCHAR(255),
+    occupation VARCHAR(255),
+    annual_income DECIMAL(10, 2),
+    work_experience INT,
+    existing_loans TEXT,
+    credit_score INT,
+    loan_amount DECIMAL(10, 2),
+    loan_term INT
+);

@@ -1,0 +1,176 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	
+	align-items: center;
+        }
+        h1{
+            margin-left: 30%;
+        }
+        nav {
+            background:#007A77;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .block-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .flip-card {
+            background: white;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .flip-card-front {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #007BFF;
+        }
+        .flip-card-back {
+            background: #e9f2ff;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        .apply-button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        img{
+            width: 100%;
+           height: 100%;
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+        
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .apply-button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-info {
+            margin: 10px 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        @media (max-width: 768px) {
+            .block-container {
+                flex-wrap: nowrap;
+            }
+            .flip-card {
+                width: 200px;
+            }
+        }
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+            .block-container {
+                flex-wrap: wrap;
+                overflow-x: hidden;
+                justify-content: center;
+            }
+            .flip-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
